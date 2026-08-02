@@ -92,7 +92,7 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Add to Outlook",
+      "label": "Register for free",
       "href": "https://app.lanten.ai/signup"
     }
   },
