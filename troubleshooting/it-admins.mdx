@@ -1,0 +1,49 @@
+---
+title: "For IT administrators"
+description: "Deploying and approving Lanten in a managed Microsoft 365 tenant — everything you need on one page."
+icon: "server"
+---
+
+This page is for whoever manages Microsoft 365 for an agency using Lanten. It covers what the app is, the permissions it requests, and how to deploy it centrally. If a user sent you here, they most likely hit an "approval required" screen or a blocked add-in install.
+
+## What Lanten is
+
+Lanten is an Outlook add-in for lettings and property-management teams. It reads the email a user has open, matches the sender against the agency's Street CRM account, and prepares draft replies and CRM actions — every send and every CRM write requires explicit user approval. It's built by LANTEN LTD, a UK company; all data is hosted and processed in the UK.
+
+## Permissions requested
+
+Lanten requests the following Microsoft Graph delegated permissions at user consent:
+
+- View users' basic profile
+- Maintain access to data you have given it access to
+- Read and write access to user mail
+- Send mail as a user _(used only to send messages the user has explicitly approved)_
+- Read and write user mailbox settings _(used to create the Outlook categories behind Lanten's tagging feature)_
+
+If your tenant restricts user consent, an admin can grant consent for the organisation — the standard consent dialog includes **Consent on behalf of your organisation**, or grant it via Entra ID → Enterprise applications.
+
+{/* TODO: add the Entra App ID (from Chris) so admins can verify they're consenting to the right application */}
+
+## Deploying centrally
+
+To roll Lanten out without each user installing it themselves:
+
+1. **Microsoft 365 admin center → Settings → Integrated apps → Get apps**
+2. Search for **Lanten**, then choose the users or groups to deploy to
+3. Deployment typically reaches mailboxes within a few hours; users then see Lanten under **Apps** on any open email
+
+{/* TODO: confirm central deployment is supported/tested today, and whether you'd rather admins deploy to all vs pilot group first */}
+
+Users still can't see it after deployment? The usual causes are on [Lanten isn't showing in Outlook](/troubleshooting/add-in-not-showing).
+
+## Security summary
+
+- UK-based hosting and processing
+- Encryption in transit and at rest
+- SOC 2 Type II certified; GDPR compliant; ICO registered
+- Street CRM access is scoped to an API key the agency creates and can revoke in Street at any time
+- Users can disconnect their own mailbox at any time from the Lanten dashboard
+
+Security questionnaires and DPA requests: [support@lanten.ai](mailto:support@lanten.ai).
+
+{/* TODO: confirm the right contact for security/DPA requests */}

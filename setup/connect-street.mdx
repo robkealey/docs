@@ -1,0 +1,77 @@
+---
+title: "Connecting Street"
+description: "Create an API key in Street and paste it into Lanten — one person does this once for the whole agency."
+icon: "key"
+---
+
+Lanten pulls tenants, landlords, applicants and properties straight from Street. The connection is made **once per agency**: one person creates the key, and it works for everyone — teammates who join later don't need to do anything.
+
+<Note>
+  You'll need access to **Settings → Applications** in Street to create the key. If you can't see that menu, ask whoever administers your Street account.
+
+  {/* TODO: name the exact Street permission/role required */}
+</Note>
+
+## Create the key in Street
+
+<Steps>
+  <Step title="Open Settings in Street">
+    Log in to Street and click **Settings** at the bottom of the left-hand menu.
+
+    <Frame caption="Settings lives at the bottom of Street's navigation.">
+      ![The Street dashboard with Settings highlighted](/images/connect-street/street-settings.png)
+    </Frame>
+  </Step>
+  <Step title="Go to Applications">
+    Under **Account administration**, click **Applications**.
+
+    <Frame caption="Applications is under Account administration.">
+      ![The Street settings menu with Applications highlighted](/images/connect-street/applications.png)
+    </Frame>
+  </Step>
+  <Step title="Create a new application">
+    At the bottom of the page, find **Create new application** and fill it in:
+
+    - **Application name:** Lanten
+    - **API Token Scope:** Open API
+    - Contact name and email: yours
+
+    Then click **Create Application**.
+
+    <Frame caption="Name it Lanten and select the Open API scope.">
+      ![Street's Create new application form](/images/connect-street/create-application.png)
+    </Frame>
+  </Step>
+  <Step title="Copy the token">
+    Street shows your new access token once. Click **Click to copy**.
+
+    <Warning>
+      **Street only shows this token once.** If you leave the page without copying it, you can't retrieve it — you'd need to create a new application and use that token instead.
+    </Warning>
+
+    <Frame caption="Copy the token before leaving the page.">
+      ![Street showing the newly created access token with a copy button](/images/connect-street/copy-token.png)
+    </Frame>
+  </Step>
+  <Step title="Paste it into Lanten">
+    Back in Lanten — in onboarding, or at [app.lanten.ai](https://app.lanten.ai) → **Integrations** → Street — paste the token and click **Connect Street**.
+
+    <Frame caption="Paste the key and connect.">
+      ![Lanten's Add your Street API key screen](/images/quickstart/street-key.png)
+    </Frame>
+  </Step>
+  <Step title="Check it worked">
+    Open an email in Outlook from someone who's in Street — a current tenant is ideal. Their record should appear in the panel within a moment. That's the whole test.
+  </Step>
+</Steps>
+
+## Managing the connection
+
+On [app.lanten.ai](https://app.lanten.ai) → **Integrations**, the Street card is badged **Organisation** — it belongs to your agency, not to you personally. From there you can:
+
+- **Update key** — paste a new token (for example, if the old application was deleted in Street)
+- **Disconnect** — stops record matching, suggested actions losing their Street context, and tasks/notes/work orders, for everyone
+
+<Frame caption="One Street connection for the whole team.">
+  ![The Integrations page showing the Street connection with Update key](/images/dashboard/integrations.png)
+</Frame>

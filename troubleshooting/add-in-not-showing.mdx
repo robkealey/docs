@@ -1,0 +1,51 @@
+---
+title: "Lanten isn't showing in Outlook"
+description: "Work down this checklist — it resolves almost every missing-add-in case."
+icon: "circle-alert"
+---
+
+Installed Lanten but can't see it? Work through these in order — they're arranged from most to least common.
+
+{/* TODO: reorder by real ticket frequency once support data accumulates — current order is best-guess */}
+
+<AccordionGroup>
+  <Accordion title="It's installed — just hidden behind the Apps button">
+    The most common case isn't missing, it's buried. Open an email and click **Apps** in the toolbar (in classic Outlook, look on the ribbon). Lanten should be in the flyout.
+
+    Fix it properly so this stops happening: [pin the panel](/getting-started/pin-lanten) and [put Lanten's icon on every message](/outlook/reading-pane-actions).
+  </Accordion>
+
+  <Accordion title="You're signed into the wrong account or mailbox">
+    Add-ins install to a **mailbox**, not to the app. If Outlook is showing a different account than the one you connected during setup — or you're looking at a shared mailbox — Lanten won't be there. Check the account in the top-right of Outlook matches the mailbox you set Lanten up with.
+  </Accordion>
+
+  <Accordion title="You're in a shared mailbox">
+    Shared mailboxes behave differently with add-ins depending on how they're set up and which Outlook you're in. See [Shared inboxes](/outlook/shared-inboxes) for what's supported.
+  </Accordion>
+
+  <Accordion title="Your Outlook version isn't supported — or you just switched versions">
+    Check [New vs classic Outlook](/outlook/new-vs-classic) for the support matrix. And if you've recently flipped the New Outlook toggle: the add-in is still installed — open any email → **Apps** → Lanten, then re-pin (pinning doesn't carry across the switch).
+  </Accordion>
+
+  <Accordion title="Your IT admin controls add-in installs">
+    In some organisations, Microsoft 365 is configured so only admins can install add-ins — the Add button is greyed out, or Lanten disappears after install. Forward [For IT administrators](/troubleshooting/it-admins) to whoever runs your Microsoft 365; deploying Lanten centrally takes them a few minutes.
+  </Accordion>
+
+  <Accordion title="Outlook is being Outlook — restart and re-sync">
+    - Fully quit and reopen Outlook (on Windows, check it's not still in the system tray).
+    - On the web: hard-refresh (Ctrl/Cmd\+Shift\+R) or try a private window — extensions and stale caches hide add-ins.
+    - Still nothing? Sign out of Outlook, sign back in, and reopen an email.
+  </Accordion>
+</AccordionGroup>
+
+## Still stuck?
+
+Email [support@lanten.ai](mailto:support@lanten.ai) with:
+
+{/* TODO: confirm support email address */}
+
+1. Which Outlook you're using (new / classic / web / Mac — see [how to tell](/outlook/new-vs-classic))
+2. Whether it's your own mailbox or a shared one
+3. A screenshot of an open email, toolbar included
+
+Those three things usually make the answer obvious on our side.

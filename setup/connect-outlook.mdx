@@ -1,0 +1,57 @@
+---
+title: "Connecting Outlook"
+description: "Connect your Microsoft 365 inbox so Lanten can read context and draft replies — and see exactly what each permission is for."
+icon: "plug"
+---
+
+Connecting Outlook lets Lanten read the email you're looking at, prepare drafts, and apply Tags. Everyone on your team connects their **own** inbox — this step is per person, unlike [Street](/setup/connect-street), which is connected once for the whole agency.
+
+<Note>
+  **Lanten never sends an email without your approval.** It prepares drafts; you approve and send, or edit and send. Your data is encrypted in transit and at rest, and you can disconnect at any time.
+</Note>
+
+## Connect it
+
+<Steps>
+  <Step title="Start the connection">
+    During onboarding, click **Connect Outlook**. Already past onboarding? Go to [app.lanten.ai](https://app.lanten.ai) → **Integrations** → **Connect** next to Outlook.
+
+    <Frame caption="You'll be redirected to Microsoft to sign in securely.">
+      ![The Connect Outlook step](/images/quickstart/connect-outlook.png)
+    </Frame>
+  </Step>
+  <Step title="Sign in with your work email">
+    Use the Microsoft 365 account whose inbox you work from.
+  </Step>
+  <Step title="Review the permissions and click Accept">
+    Microsoft shows the exact list — explained below. You'll come straight back to Lanten once you're connected.
+
+    <Frame caption="The Microsoft consent screen for Lanten.">
+      ![Microsoft permissions screen listing what Lanten requests](/images/connect-outlook/consent.png)
+    </Frame>
+  </Step>
+</Steps>
+
+## What each permission is for
+
+{/* TODO: confirm the purpose wording below with Chris before publishing */}
+
+| Microsoft asks for | Why Lanten needs it |
+| --- | --- |
+| View users' basic profile | To sign you in and show your name in the dashboard |
+| Maintain access to data you have given it access to | To stay connected so you don't re-consent every session |
+| Read and write access to user mail | To read the email you have open for context and summaries, save reply drafts, and apply Tags to messages |
+| Send mail as a user | To send a reply **after you've approved it** — never on its own |
+| Read and write user mailbox settings | To create your Tags as Outlook categories, with their colours |
+
+## If you see "Approval required"
+
+Some organisations require an admin to approve new apps. If Microsoft shows an approval-required screen instead of Accept, forward [For IT administrators](/troubleshooting/it-admins) to whoever manages your Microsoft 365 — it has everything they need, including the option to consent on behalf of the whole organisation.
+
+## Disconnecting and reconnecting
+
+In [app.lanten.ai](https://app.lanten.ai) → **Integrations**, the Outlook card shows which mailbox is connected. **Disconnect** stops Lanten reading anything; reconnect any time with the same steps above.
+
+<Frame caption="Street is connected for the organisation; Outlook is personal to each teammate.">
+  ![The Integrations page showing Street and Outlook connections](/images/dashboard/integrations.png)
+</Frame>

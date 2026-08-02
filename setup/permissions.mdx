@@ -1,0 +1,43 @@
+---
+title: "Permissions & data access"
+description: "Exactly what Lanten can see, what it can do, and where your data lives."
+icon: "shield-check"
+---
+
+This page is the plain-English reference for what Lanten can and can't do with your data — useful if you're the sceptical one, or if you need to convince them.
+
+## The approval-only model
+
+Lanten **drafts**; you decide. Every action — a reply, a work order, a task, a note — is prepared and shown to you first. You approve and send, or edit and send, or ignore it. Nothing is emailed and nothing is written into Street without you.
+
+## What Lanten reads
+
+- **Your email** — the thread you have open, to show context, summaries and suggested actions. See [Connecting Outlook](/setup/connect-outlook) for the exact Microsoft permissions and what each one is for.
+- **Your Street records** — contacts, properties, tenancies and maintenance, to match senders and pre-fill actions. The connection uses a Street API key your agency creates; see [Connecting Street](/setup/connect-street).
+
+## What Lanten writes
+
+Only things you approve:
+
+- Replies you send from the panel
+- Notes, tasks and work orders you create in Street
+- Tags, applied to emails as Outlook categories
+
+## Where your data lives
+
+Everything is hosted and processed in the **UK**. Data is encrypted in transit and at rest. Lanten is SOC 2 Type II certified and GDPR compliant.
+
+{/* TODO: add the retention sentence — how long email/derived data is kept — and confirm the privacy policy URL */}
+
+For the full detail, read the [privacy policy](https://lanten.ai/privacy).
+
+## Scope of each connection
+
+| Connection | Scope | Meaning |
+| --- | --- | --- |
+| Street | Organisation | Connected once, shared by the whole agency |
+| Outlook | Personal | Each teammate connects — and can disconnect — their own inbox |
+
+Disconnecting either at [app.lanten.ai](https://app.lanten.ai) → **Integrations** takes effect immediately.
+
+Questions from your IT team or a security questionnaire? Point them at [For IT administrators](/troubleshooting/it-admins).

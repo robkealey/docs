@@ -1,0 +1,50 @@
+---
+title: "Street records: see who's emailing you"
+description: "Lanten matches the sender to your Street records and shows the full picture — tenancy, property, compliance and open jobs — beside the email."
+icon: "id-card"
+---
+
+Open an email and Lanten looks the sender up in Street. If they're in your CRM, the panel shows who they are and everything relevant to the conversation — no tab-switching, no searching Street by hand.
+
+## How matching works
+
+Lanten matches on the **sender's email address** against your Street records. When the person is linked to more than one thing — or the email itself makes the context obvious — Lanten helps you narrow it down:
+
+- **Multiple matches:** you get a picker. A solicitor acting on two sales sees "Choose the sale (2)" with both properties listed.
+- **Inferred context:** when Lanten works out the property from the thread, it says so — you'll see it labelled "In this thread (assumed)".
+
+<Frame caption="A solicitor linked to two sales — pick the one this email is about.">
+  ![The Lanten panel showing a solicitor record with a Choose the sale picker](/images/records/solicitor.png)
+</Frame>
+
+{/* TODO: forwarded emails — describe the shipped behaviour (matching on the original sender) once the fix is live */}
+
+## What you'll see
+
+Every record card starts with the person — name, role, contact details — and a **View in Street** button that jumps straight to their record. Below that, the card adapts to who they are:
+
+### Tenants
+
+Tenancy status and dates, rent, landlord, gas safety expiry, last inspection — and any **open maintenance** jobs pulled from Street, so you know about the broken boiler before you've finished reading about it.
+
+<Frame caption="A tenant's card: tenancy, rent, compliance dates and the open maintenance job.">
+  ![The Lanten panel showing a tenant record with tenancy details and open maintenance](/images/records/tenant.png)
+</Frame>
+
+### Landlords
+
+Their properties, current tenancy status, and compliance at a glance — including what's _missing_, shown as "none recorded".
+
+<Frame caption="A landlord's card, including the gaps.">
+  ![The Lanten panel showing a landlord record](/images/records/landlord.png)
+</Frame>
+
+### Applicants, solicitors and more
+
+Applicants show their applications; solicitors show their firm and the sales they act on.
+
+{/* TODO: definitive record-type list — contractors? vendors/buyers? guarantors? — then expand this section */}
+
+## When there's no match
+
+If the sender isn't in Street, Lanten still shows the panel — summaries and reply drafting work on any email — it just won't have CRM context to add. If someone _should_ be matching but isn't, check the address they're emailing from is the one on their Street record.

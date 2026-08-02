@@ -1,0 +1,53 @@
+---
+title: "Tags"
+description: "Describe a tag in plain English and Lanten's AI applies it to incoming email — as Outlook categories, right in your normal inbox."
+icon: "tag"
+---
+
+Tags let you organise the inbox by what emails _are_ — complaints, urgent requests, high-value landlords — without moving anything anywhere. You describe each tag in plain English; the AI checks every incoming email against your descriptions and applies the ones that fit.
+
+Under the hood, tags are **Outlook categories**: they show as colours in your message list, they're filterable, and they sync everywhere your mailbox does — including your phone.
+
+## Creating a Tag
+
+Tags are managed in the dashboard: [app.lanten.ai](https://app.lanten.ai) → **Tags**.
+
+<Frame caption="Name it as you want it to appear in Outlook, pick a colour, then describe when it should apply.">
+  ![The Tags page in the Lanten dashboard with the Add a tag form](/images/tags/create.png)
+</Frame>
+
+1. **Name** the tag as you want it to appear in Outlook.
+2. Pick a **colour** — this becomes the category colour in your inbox.
+3. Describe **when it should be applied**, in up to 500 characters.
+
+The description is the whole game. The AI checks it against every incoming email, so be specific about when it _should and shouldn't_ apply — you can reference what the email is about, who sent it (a tenant, a landlord, an applicant), or even the sender's email address.
+
+<Tip>
+  Write the description like you'd brief a new starter. The built-in example is the pattern to copy:
+
+  **Complaint** — _"Apply when someone is unhappy with the service, raising anti-social behaviour, or reporting a dispute with a neighbour or another tenant."_
+</Tip>
+
+## What gets tagged
+
+- Tags apply to **new email arriving after the tag exists** — Lanten doesn't backfill your history.
+- Wrong call? Add or remove the category on any email in Outlook as normal. Corrections don't retrain the AI — if a tag keeps misfiring, **sharpen its description** instead; that's the lever.
+
+## Finding tagged emails
+
+Tagged emails show their colours in the message list. From there, Outlook's own machinery does the work: filter the inbox by category, click a category to see everything carrying it, or save a category search for one-click access.
+
+{/* TODO: capture images/tags/inbox.png (coloured tags in the message list) and images/tags/filtered.png (a category filter applied), embed both */}
+
+## Tags vs separate inboxes
+
+The old way to organise a lettings inbox is more inboxes: maintenance@, accounts@, complaints@ — each one a place for things to be forwarded to, lost in, and double-answered from.
+
+Tags are the alternative: **one inbox, many views**. The same email can be `Maintenance` _and_ `Urgent` _and_ `High-value landlord` at once — no forwarding, no "who's got this?", full thread history intact. Ideas that work well:
+
+- **Urgent requests** — anything needing same-day action
+- **Complaints** — service issues, disputes, anti-social behaviour
+- **High-value landlords** — your top clients, by name or address if you like
+- **Compliance** — gas certificates, EICRs, licensing
+
+Running a genuinely shared mailbox as well? See [Shared inboxes](/outlook/shared-inboxes).
