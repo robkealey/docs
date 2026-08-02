@@ -6,41 +6,55 @@ icon: "list-todo"
 
 Whatever email you're reading, two Street actions are always available in the panel: **Create note** and **Create task**. They're how the conversation in your inbox becomes a record in your CRM — without opening Street.
 
+<Frame caption="Both actions sit under Suggested actions on every email.">
+  ![The Create note in Street and Create task in Street buttons in the Lanten panel](/images/tasks-notes/actions-row.png)
+</Frame>
+
+<Note>
+  **First time only:** pick yourself from the **Author** (notes) or **Assignee** (tasks) list — that's how the record is attributed in Street. Lanten remembers your choice and defaults to it from then on.
+</Note>
+
 ## Create a note in Street
 
 Use it when the email contains something worth keeping on the record: a tenant's new phone number, a landlord agreeing to a spend, a warning sign you want the next person to see.
 
+<Frame caption="Author, entity, contents — and pin it if it should sit at the top of the record.">
+  ![The Create note in Street form with author, entity, note contents and pinned toggle](/images/tasks-notes/note-form.png)
+</Frame>
+
 <Steps>
   <Step title="Click Create note in Street">
-    The form opens at the bottom of the panel.
+    The form opens in the panel.
   </Step>
   <Step title="Check the details">
-    **Person** is pre-selected from the matched record. Write (or edit) the **contents**, and toggle **pinned** if it should sit at the top of their record in Street.
+    **Entity** is pre-set to whatever the email matched — the tenant, property or landlord the note belongs against in Street; switch it if it belongs somewhere else. Write the **note contents**, and toggle **Pinned** if it should sit at the top of the record.
   </Step>
-  <Step title="Save">
-    The note appears on that person's record in Street immediately.
+  <Step title="Create note">
+    It appears on that record in Street immediately.
   </Step>
 </Steps>
-
-{/* TODO: capture images/tasks-notes/note-form.png and the resulting note in Street, embed both */}
 
 ## Create a task in Street
 
 Use it when the email creates a to-do: chase the gas certificate, book the inspection, call the landlord back Friday.
 
+<Frame caption="Assignee, entity, one of your Street task types, and a due date.">
+  ![The Create task in Street form with assignee, entity, task type, title, description and due date](/images/tasks-notes/task-form.png)
+</Frame>
+
 <Steps>
   <Step title="Click Create task in Street">
-    The form opens at the bottom of the panel.
+    The form opens in the panel.
   </Step>
   <Step title="Fill it in">
-    **Person**, **title**, **description**, **due date** — mostly pre-filled from the email; adjust what you like.
+    **Entity** is pre-set to the record the email matched. Pick a **task type** — the list comes straight from your Street task types — then add a **title**, **description** and **due date**.
   </Step>
-  <Step title="Save">
-    The task lands in Street's task list, due date set.
+  <Step title="Create task">
+    The task lands in Street's task list, assigned and dated.
   </Step>
 </Steps>
 
-{/* TODO: capture images/tasks-notes/task-form.png and the resulting task in Street, embed both */}
+{/* TODO: capture the resulting note and task inside Street and embed — the Street-side view is what makes this page convincing */}
 
 <Tip>
   Lanten will also **suggest** a note or task when the email obviously calls for one — same forms, pre-filled harder. See [Suggested actions](/using-lanten/suggested-actions).
