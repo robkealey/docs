@@ -1,99 +1,101 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Lanten Help Centre",
+  "description": "Get the most out of Lanten — the AI email co-pilot for letting agents, inside Outlook.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#5A5FD8",
+    "light": "#8B8FE8",
+    "dark": "#46505D"
   },
-  "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "light"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Newsreader"
+    },
+    "body": {
+      "family": "Hanken Grotesk"
+    }
+  },
+  "favicon": "/favicon.png",
+  "logo": {
+    "light": "/logo/lanten.png",
+    "dark": "/logo/lanten.png",
+    "href": "https://lanten.ai"
+  },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": []
-          },
-          {
-            "group": "Customization",
-            "pages": []
-          },
-          {
-            "group": "Writing content",
-            "pages": []
-          },
-          {
-            "group": "AI tools",
-            "pages": []
-          }
+        "group": "Getting started",
+        "pages": [
+          "getting-started/what-is-lanten",
+          "getting-started/quickstart",
+          "getting-started/pin-lanten"
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": []
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": []
-          }
+        "group": "Setup",
+        "pages": [
+          "setup/connect-outlook",
+          "setup/connect-street",
+          "setup/permissions"
+        ]
+      },
+      {
+        "group": "Using Lanten",
+        "pages": [
+          "using-lanten/street-records",
+          "using-lanten/linked-threads",
+          "using-lanten/summaries",
+          "using-lanten/suggested-actions",
+          "using-lanten/tasks-and-notes",
+          "using-lanten/tags"
+        ]
+      },
+      {
+        "group": "Team & billing",
+        "pages": [
+          "team-billing/invite-team",
+          "team-billing/settings",
+          "team-billing/subscription"
+        ]
+      },
+      {
+        "group": "Outlook compatibility",
+        "pages": [
+          "outlook/new-vs-classic",
+          "outlook/mobile",
+          "outlook/shared-inboxes",
+          "outlook/reading-pane-actions"
+        ]
+      },
+      {
+        "group": "Troubleshooting",
+        "pages": [
+          "troubleshooting/add-in-not-showing",
+          "troubleshooting/it-admins"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    ]
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Sign in",
+        "href": "https://app.lanten.ai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Add to Outlook",
+      "href": "https://app.lanten.ai/signup"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://lanten.ai"
     }
   }
 }
