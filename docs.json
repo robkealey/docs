@@ -11,6 +11,9 @@
   "appearance": {
     "default": "light"
   },
+  "icons": {
+    "library": "lucide"
+  },
   "fonts": {
     "heading": {
       "family": "Newsreader"
