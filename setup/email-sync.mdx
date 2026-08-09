@@ -1,0 +1,58 @@
+---
+title: "Syncing emails to Street"
+description: "Automatically log the emails your team sends and receives against the matching Street records — switched on per inbox, configured once for your agency."
+icon: "refresh-cw"
+---
+
+Email sync logs your team's emails to Street for you. When someone sends or receives an email, Lanten matches it to the relevant Street records and writes it up as a note there — no copy-paste, and nothing slips because a colleague forgot to log it. It's the always-on companion to the manual [Create note action](/using-lanten/tasks-and-notes).
+
+Two switches control it, both on the Integrations page at [app.lanten.ai](https://app.lanten.ai):
+
+- **Street sync** — turned on per inbox, by each teammate.
+- **Email sync** — which record types emails are logged against, set once for the whole agency.
+
+## Turn it on for an inbox
+
+Email sync stays off until you switch it on for a connected inbox. Each teammate connects their own Outlook (see [Connecting Outlook](/setup/connect-outlook)), so each person turns on their own sync.
+
+Go to [app.lanten.ai](https://app.lanten.ai) → **Integrations**. On your **Outlook** card, flip **Street sync** on.
+
+<Frame caption="Flip Street sync on to start logging that inbox's emails to Street.">
+  ![The Outlook card on the Integrations page with the Street sync toggle switched on](/images/email-sync/street-sync-toggle.png)
+</Frame>
+
+From that moment, emails on that inbox start logging to Street. Turn it off any time from the same toggle.
+
+<Note>
+  Street sync is **per inbox** — switching it on for your account doesn't touch anyone else's. Every teammate who wants their emails logged flips their own toggle.
+</Note>
+
+## Choose which records get logged
+
+By default, synced emails are logged against every kind of Street record. If you'd rather narrow that down, do it once for the whole agency.
+
+On the Integrations page, open **Advanced settings** on the **Street** card and find **Email sync** — _"Which Street records synced emails are logged against, for inboxes with Street sync turned on."_ Toggle any record type on or off:
+
+<Frame caption="Turn off any record type you don't want synced emails logged against.">
+  ![The Email sync advanced settings with toggles for People, Properties and tenancies, Sales viewings and applicants, Maintenance jobs and Enquiries](/images/email-sync/record-settings.png)
+</Frame>
+
+- **People**
+- **Properties & tenancies**
+- **Sales, viewings & applicants**
+- **Maintenance jobs**
+- **Enquiries**
+
+These settings are organisation-wide: they apply to every inbox that has Street sync turned on.
+
+{/* TODO: confirm exactly which Street record types sit under each toggle with Chris (e.g. does "People" cover tenants, landlords, applicants, vendors, solicitors?). */}
+
+## How matching works
+
+Lanten matches each email to Street records by the addresses on it — the same matching that powers the [sender's record card](/using-lanten/street-records). One email can be logged against more than one record: a tenant's maintenance email can land on both the tenant and the property.
+
+{/* TODO: confirm the matching detail with Chris — are both sent and received emails logged? real-time or batched? how are duplicates handled? */}
+
+<Tip>
+  Email sync and manual notes work together. Let sync capture the running history in the background, and use [Create note](/using-lanten/tasks-and-notes) when you want to write a specific, pinned note in your own words.
+</Tip>
