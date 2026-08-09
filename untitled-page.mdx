@@ -1,0 +1,39 @@
+---
+title: "Logging maintenance requests in Street"
+description: "Turn a maintenance email into a Street maintenance request in one click — pre-filled from the email, yours to check and log."
+icon: "wrench"
+---
+
+When a tenant reports a problem, **Maintenance** turns their email into a Street maintenance request without you re-typing a thing. It sits alongside [Create note and Create task](/using-lanten/tasks-and-notes) under Suggested actions.
+
+<Frame caption="Maintenance sits with the other Street actions under Suggested actions.">
+  ![The Suggested actions row with Create note, Create task and Maintenance buttons](/images/maintenance/action.png)
+</Frame>
+
+## Log a request
+
+Click **Maintenance** and Lanten opens a **Log maintenance request in Street** form, already filled in from the email:
+
+<Frame caption="Every field is pre-filled from the email — check it and log.">
+  ![The Log maintenance request in Street form, pre-filled with property, priority, reporter, summary and description](/images/maintenance/form.png)
+</Frame>
+
+- **Property** — matched from the email; the property the request is logged against
+- **Priority** — Lanten's read of urgency; change it if needed
+- **Reported by** — who raised it (e.g. Tenant)
+- **Summary** — a short title, drawn from the subject
+- **Description** — the detail, written up from the email thread
+
+Adjust anything, then click **Report maintenance**. The request is created in Street straight away.
+
+<Note>
+  **This creates a maintenance _request_, not a job.** A logged request won't show under **Open Maintenance** in Street until someone converts it into a job there. Street's API doesn't currently support creating maintenance jobs directly, so Lanten logs the request for your team to triage and convert.
+</Note>
+
+## When to use it
+
+Reach for Maintenance whenever an email reports something that needs fixing — a leak, a broken boiler, mould — so it lands in Street as a request the moment you read it, instead of waiting for someone to key it in later.
+
+<Tip>
+  Maintenance captures the _what_ in Street; use [Reply](/using-lanten/suggested-actions) to acknowledge the tenant in the same pass.
+</Tip>
