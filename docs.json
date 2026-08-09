@@ -43,6 +43,7 @@
         "pages": [
           "setup/connect-outlook",
           "setup/connect-street",
+          "setup/email-sync",
           "setup/permissions"
         ]
       },
